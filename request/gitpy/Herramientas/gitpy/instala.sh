@@ -58,7 +58,7 @@ inst_components () {
 funcao_idioma () {
  echo -e " "
 msg -bar2
-cowsay -f eyes "BIENVENIDO A EDDYJHOEL-SCRIP 2.0 (BOOSTER)" | lolcat
+cowsay -f eyes "BIENVENIDO A EDDYJHOEL-SCRIP 2.0 (FLIX)" | lolcat
 figlet ..dankelthaher.. | lolcat
  echo -e " "
 msg -bar2

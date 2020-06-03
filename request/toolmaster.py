@@ -18,7 +18,7 @@ def slowprint(s):
         time.sleep(4. / 100)
 banner = '''
 ========= ToolMaster =======\033[91m
-========== NEW -ADM ========\033[96m
+========== EDDYJHOEL-SCRIP FLIX========\033[96m
 '''
 print banner
 def menu():
@@ -38,7 +38,7 @@ def menu():
 \033[91m [0] \033[92m>\033[96m Salir
 \033[91m==============================
 '''
-slowprint("   \033[1;34mNEW-AMD" + " - toolmaster")
+slowprint("   \033[1;34m EDDYJHOEL-SCRIP FLIX" + " - Toolmaster")
 
 menu()
 def ext():

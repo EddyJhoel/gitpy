@@ -32,7 +32,7 @@ fi
 net_meter () {
 net_dir="/etc/usr_cnx"
 usr_text="$(fun_trans "USUARIOS")"
-datos_text="$(fun_trans "USO APROXIMADO")"
+datos_text="$(fun_trans "USO APROX")"
 porcen_text="$(fun_trans "CONSUMO TOTAL")"
 net_cent="/tmp/porcentagem"
 sed -i '/^$/d' $net_dir

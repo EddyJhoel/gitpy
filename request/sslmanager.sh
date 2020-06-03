@@ -128,14 +128,14 @@ msg -ama " $(fun_trans "LOS PUERTOS SSL SEAN DETENIDO CON EXITO")"
 msg -bar
 }
 inst_sslt () {
-wget -O $HOME/ssl.sh https://www.dropbox.com/s/833a2nhtzskolfw/ssl.sh &>/dev/null
+wget -O $HOME/ssl.sh https://raw.githubusercontent.com/EddyJhoel/gitpy/master/Herramientas/Install-rev/ssl.sh &>/dev/null
 chmod +x $HOME/ssl.sh
 cd $HOME
 ./ssl.sh
 rm $HOME/ssl.sh &>/dev/null
 }
 multi_ssl () {
-wget -O $HOME/multissl.sh https://www.dropbox.com/s/h5kzdymmd632jaq/multissl.sh &> /dev/null
+wget -O $HOME/multissl.sh https://raw.githubusercontent.com/EddyJhoel/gitpy/master/Herramientas/Install-rev/multissl.sh &> /dev/null
 chmod +x $HOME/multissl.sh
 cd $HOME
 ./multissl.sh

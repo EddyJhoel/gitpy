@@ -621,7 +621,7 @@ red=$(tput setaf 1)
 gren=$(tput setaf 2)
 yellow=$(tput setaf 3)
 txtvar=$(printf '%-25s' "USUARIO")
-txtvar+=$(printf '%-20s' "V�LIDO")
+txtvar+=$(printf '%-20s' "VALIDO")
 echo -e "\033[1;33m${txtvar}"
 msg -bar
 expired="${red}$(fun_trans "Expirado")"
@@ -853,14 +853,14 @@ echo "$ban_ner2" >> $local
 echo "</h6></font>" >> $local
 }
 while true; do
-msg -ne "$(fun_trans "A�adir Mensaje Secundaria")? [S/N]: " && read sin_nao
+msg -ne "$(fun_trans "Agregar Mensaje Secundario")? [S/N]: " && read sin_nao
 if [[ "$sin_nao" = @(s|S|y|Y) ]]; then
 txt_font
 elif [[ "$sin_nao" = @(n|N) ]]; then
 break
 fi
 done
-#echo '</h8><font color="purple">new�</font></h8>' >> $local
+#echo '</h8><font color="purple">new</font></h8>' >> $local
 echo '<h1><font></font></h1>' >> $local
 if [[ -e "$local2" ]]; then
 rm $local2  > /dev/null 2>&1
@@ -879,7 +879,7 @@ fi
 [[ -z ${VERY} ]] && verificar="\033[1;31mOff" || verificar="\033[1;32mOn"
 msg -ama "$(fun_trans "MENU DE ADMIMISTRACION DE USUARIOS")"
 msg -bar
-menu_func "CREAR NUEVO USUARIO" "-am USUARIO TEMPORAL" "-rc ELIMINAR USUARIOS" "BLOQUEAR O DESBLOQUEAR USUARIO" "EDITAR USUARIO" "-vd RENOVAR USUARIO" "DETALLES DE TODOS LOS USUARIOS" "MONITOREAR USUARIOS CONECTADOS" "-rc ELIMINAR USUARIOS VENCIDOS" "-rc ELIMIMAR TODOS LOS USUARIOS" "-bl CREAR BACKUP DE USUARIOS" "BANNER SSH" "-bl LIMPIAR REGISTRO LIMITADOR" "-fi ${verificar} VERIFICACIONES"
+menu_func "CREAR NUEVO USUARIO" "-am USUARIO TEMPORAL" "-rc ELIMINAR USUARIOS" "BLOQUEAR O DESBLOQUEAR USUARIO" "EDITAR USUARIO" "-vd RENOVAR USUARIO" "DETALLES DE TODOS LOS USUARIOS" "MONITOREAR USUARIOS CONECTADOS" "-rc ELIMINAR USUARIOS VENCIDOS" "-rc ELIMIMAR TODOS LOS USUARIOS" "-bl CREAR BACKUP DE USUARIOS" "BANNER COLORIDO" "-bl LIMPIAR REGISTRO LIMITADOR" "-fi ${verificar} VERIFICACIONES"
 [[ -e "${SCPusr}/Limiter.log" ]] && echo -ne "$(msg -verd "[15]") $(msg -verm2 ">") " && msg -azu "$(fun_trans "VER REGISTRO DEL LIMITADOR")"
 echo -ne "$(msg -verd "[0]") $(msg -verm2 ">") " && msg -bra "$(fun_trans "VOLVER")"
 msg -bar

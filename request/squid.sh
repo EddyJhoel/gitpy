@@ -33,7 +33,7 @@ fun_squid  () {
   }
 }
 install_squid () {
-msg -ama  " $(fun_trans "INSTALADOR SQUID ADM-ULTIMATE")"
+msg -ama  " $(fun_trans "INSTALADOR SQUID EDDYJHOEL-SCRIP FLIX")"
 msg -bar
 fun_ip
 msg -ne " $(fun_trans "Confirme su IP")"; read -p ": " -e -i $IP ip
@@ -72,7 +72,7 @@ tput cuu1 && tput dl1
 if [[ $proxy_opt = 1 ]]; then
 msg -ama  " $(fun_trans "INSTALACION SQUID COMUN")"
 elif [[ $proxy_opt = 1 ]]; then
-msg -ama " $(fun_trans "INSTALACION SQUID CUSTOMIZADO")"
+msg -ama " $(fun_trans "INSTALACION SQUID PERSONALIZADO")"
 else
 msg -ama " $(fun_trans "INSTALACION SQUID COMUM")"
 proxy_opt=1

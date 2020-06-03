@@ -14,7 +14,7 @@ def usage():
     print("generadorcc.py version:{}".format(version))
     print("")
     print("\033[1;31m               +------------------------------+")
-    print("               +\033[1;32m     GENERADOR DE BIN RS      \033[1;31m+")
+    print("               +\033[1;32m     GENERADOR BIN      \033[1;31m+")
     print("               +------------------------------+")
     print("")
     print("+---------------+")

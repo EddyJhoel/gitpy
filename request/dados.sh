@@ -31,7 +31,7 @@ fi
 
 net_meter () {
 net_dir="/etc/usr_cnx"
-usr_text="$(fun_trans "USUÁRIOS")"
+usr_text="$(fun_trans "USUARIOS")"
 datos_text="$(fun_trans "USO APROXIMADO")"
 porcen_text="$(fun_trans "CONSUMO TOTAL")"
 net_cent="/tmp/porcentagem"
@@ -45,7 +45,7 @@ sed -i '/^$/d' $net_dir
 bb=$(printf '%-18s' "$datos_text")
 aa=$(printf '%-19s' "$usr_text")
 cc=$(printf '%-18s' "$porcen_text")
-echo -e "\033[1;35m      MONITOR DE CONSUMO \033[1;32m[NEWADM]"
+echo -e "\033[1;35m      MONITOR DE CONSUMO \033[1;32m[EDDYJHOEL-SCRIP FLIX]"
 echo -e "$barra"
 echo -e "\033[1;33m $aa $bb $cc "
 echo -e "$barra"

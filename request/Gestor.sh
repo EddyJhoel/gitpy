@@ -75,7 +75,7 @@ echo -e "$barra"
 return
 }
 gestor_fun () {
-echo -e " \033[1;32m $(fun_trans "Administrador VPS") [NEW-ADM]"
+echo -e " \033[1;32m $(fun_trans "Administrador VPS") [EddyJhoel-Scrip FLIX]"
 echo -e "$barra"
 while true; do
 echo -e "${cor[4]} [1] > \033[1;37m$(fun_trans "Atualizar pacotes")"

@@ -124,6 +124,6 @@ echo -e " \033[1;33mLibre: \033[1;37m$ram2                   \033[1;33mLibre: \0
 echo ""
 echo -e "\033[1;37mMemória \033[1;32mRAM \033[1;37mahora en la Otimizacion:\033[1;36m" $MEM2% 
 echo ""
-echo -e "\033[1;37mEconomia de :\033[1;31m `expr $MEM1 - $MEM2`%\033[0m"
+echo -e "\033[1;37mAhorro de :\033[1;31m `expr $MEM1 - $MEM2`%\033[0m"
 
 echo -e "\033[0m\e[31m======================================================\033[1;37m"

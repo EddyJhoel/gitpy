@@ -692,7 +692,7 @@ export -f meu_ip
 export -f fun_ip
 clear
 msg -bar
-msg -ama "$(fun_trans "PUERTAS ACTIVAS E INFORMACIONES DEL SERVIDOR VPS!!")"
+msg -ama "$(fun_trans "BIENVENIDO A EDDYJHOEL-SCRIP FLIX")"
 msg -bar
 memorias
 msg -bar

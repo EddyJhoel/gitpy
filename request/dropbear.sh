@@ -71,11 +71,11 @@ fun_dropbear () {
  echo -e "\033[1;32m $(fun_trans "REMOVIENDO DROPBEAR")\n$barra"
  service dropbear stop & >/dev/null 2>&1
  fun_bar "apt-get remove dropbear -y"
- echo -e "$barra\n\033[1;32m $(fun_trans "Dropbear Removido Con Exito!!!")\n$barra"
+ echo -e "$barra\n\033[1;32m $(fun_trans "Dropbear Eliminado Con Exito!!!")\n$barra"
  [[ -e /etc/default/dropbear ]] && rm /etc/default/dropbear
  return 0
  }
-echo -e "\033[1;32m $(fun_trans "INSTALADOR DROPBEAR ADM-ULTIMATE")\n$barra"
+echo -e "\033[1;32m $(fun_trans "INSTALADOR DROPBEAR")\n$barra"
 echo -e "\033[1;31m $(fun_trans "Seleccione Puertos Válidos en orden secuencial:")\033[1;32m 22 80 81 82 85 90\033[1;37m"
 echo -e "$barra"
 echo -ne "\033[1;31m $(fun_trans "Introduzca el puerto"): \033[1;37m" && read DPORT

@@ -176,7 +176,7 @@ msg -ama "EDDYJHOEL-SCRIP FLIX"
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
-Key="qra-atsilK0@84%ab97cda8f?K8888:8@@+95+84?+94@"
+Key="qra-atsilK?0?%@bdca4@65?5K8888:04+78+9%?+07@"
 REQUEST=$(echo $SCPresq|$SUB_DOM)
 IP="104.238.135.147" && echo "$IP" > /usr/bin/vendor_code
 cd $HOME

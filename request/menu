@@ -4,9 +4,9 @@ gren=$(tput setaf 2)
 yellow=$(tput setaf 3)
 #Screen
 [[ ! -e /usr/bin/trans ]] && { 
-echo -e "Piratear es muy feo, toma verg�enza en la cara"
-echo -e "Di duro para llegar hasta aqu�, Muchas noches sin dormir"
-echo -e "Adquiere un Serial y Ayuda al desarrollador"
+echo -e "Hola"
+echo -e "Como estás"
+echo -e "Gracias por usarlo"
 }
 SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit 1
 SCPusr="${SCPdir}/ger-user" && [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr}

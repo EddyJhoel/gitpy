@@ -180,7 +180,7 @@ REQUEST=$(echo $SCPresq|$SUB_DOM)
 IP="51.91.122.141" && echo "$IP" > /usr/bin/vendor_code
 cd $HOME
 msg -ne "Key: "
-wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verified" || {
+wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verificado" || {
    echo -e "\033[1;32m Verificado"
    invalid_key
    exit

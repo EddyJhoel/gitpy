@@ -705,7 +705,7 @@ msg -ne "$(fun_trans "DIRECCION DE LA MAQUINA"): " && msg -bra "$(meu_ip)"
 [[ -e ${SCPdir}/USRonlines ]] && msg -ne "$(fun_trans "USUARIOS EN LINEA"): " && msg -bra "$(cat ${SCPdir}/USRonlines) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/USRexpired ]] && msg -ne "$(fun_trans "USUARIOS EXPIRADOS"): " && msg -bra "$(cat ${SCPdir}/USRexpired) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra "MENSAJE: $(cat ${SCPdir}/message.txt)"
-[[ -e ${SCPdir}/key.txt ]] && msg -bar && msg -bra "USER-KEY: $(cat ${SCPdir}/key.txt)"
+[[ -e ${SCPdir}/key.txt ]] && msg -bar && msg -bra "KEY: $(cat ${SCPdir}/key.txt)"
 # NOVO SISTEMA DE MENUS
 
 # SISTEMA DE HORA 

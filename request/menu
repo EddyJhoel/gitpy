@@ -445,7 +445,7 @@ eth=$(ifconfig | grep -v inet6 | grep -v lo | grep -v 127.0.0.1 | grep "encap:Et
     msg -bar
     read -p " [S/N]: " -e -i n sshsn
            [[ "$sshsn" = @(s|S|y|Y) ]] && {
-           echo -e "${cor[1]} $(fun_trans "Correcci�n de problemas de paquetes en SSH ...")"
+           echo -e "${cor[1]} $(fun_trans "Corrección de problemas de paquetes en SSH ...")"
            echo -e " $(fun_trans "�Cual es la tasa RX?")"
            echo -ne "[ 1 - 999999999 ]: "; read rx
            [[ "$rx" = "" ]] && rx="999999999"
@@ -463,7 +463,7 @@ system=$(echo $(cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed '
 echo $system|awk '{print $1, $2}'
 }
 remove_script () {
-msg -ama "$(fun_trans "CONFIRMA REMOCION TOTAL DE LOS SCRIPTS")?"
+msg -ama "$(fun_trans "CONFIRMA ELIMINACIÓN TOTAL DE LOS SCRIPTS")?"
 msg -bar
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p "[S/N]: " yesno

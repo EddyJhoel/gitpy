@@ -14,7 +14,7 @@ SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPidioma="${SCPdir}/idioma"
 if [[ -e /etc/bash.bashrc-bakup ]]; then AutoRun="\033[1;32m[on]"
-elif [[ -e /etc/bash.bashrc ]]; then AutoRun="\033[1;31m[off]"
+elif [[ -e /etc/bash.bashrc ]]; then AutoRun="\033[1;31m off"
 fi
 # Funcoes Globais
 msg () {

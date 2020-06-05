@@ -613,7 +613,7 @@ selection=$(selection_fun $Numb)
   esac
   }  
 }
-# Menu Instala��o
+# Menu Instalao
 pid_inst () {
 [[ $1 = "" ]] && echo -e "\033[1;31m[off]" && return 0
 unset portas

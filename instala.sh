@@ -41,6 +41,7 @@ MIP2=$(wget -qO- ipv4.icanhazip.com)
 }
 inst_components () {
 [[ $(dpkg --get-selections|grep -w "nano"|head -1) ]] || apt-get install nano -y &>/dev/null
+[[ $(dpkg --get-selections|grep -w "ruby"|head -1) ]] || apt-get install rubygems -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "bc"|head -1) ]] || apt-get install bc -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "screen"|head -1) ]] || apt-get install screen -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "python"|head -1) ]] || apt-get install python -y &>/dev/null

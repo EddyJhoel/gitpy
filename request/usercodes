@@ -811,7 +811,7 @@ echo -e " \033[1;32m[3] >\033[1;34m $(fun_trans "Azul")"
 echo -e " \033[1;32m[4] >\033[1;33m $(fun_trans "Amarillo")"
 echo -e " \033[1;32m[5] >\033[1;35m $(fun_trans "purpura")"
 msg -ne "$(fun_trans "Perfecto Ahora Selecione Un Color"): " && read ban_ner_cor
-echo '<h1><font>===================================</font></h1>' > $local
+echo '<h1><font></font></h1>' > $local
 if [[ "$ban_ner_cor" = "1" ]]; then
 echo '<h1><font color="green">' >> $local
 elif [[ "$ban_ner_cor" = "2" ]]; then
@@ -827,7 +827,7 @@ echo '<h1><font color="blue">' >> $local
 fi
 echo "$ban_ner" >> $local
 echo '</font></h1>' >> $local
-echo '<h1><font></font></h1>' >> $local
+echo '<h1><font>===============================</font></h1>' >> $local
 txt_font () {
 msg -ne "$(fun_trans "escriba el mensaje secundario"): " && read ban_ner2
 echo -e " \033[1;32m[1] >\033[1;32m $(fun_trans "Verde")"

@@ -120,7 +120,7 @@ msg -verm "$(fun_trans "Perfecto Iniciando Procedimiento"): "
 wget -O $HOME/newadmin3.0.sh https://raw.githubusercontent.com/EddyJhoel/gitpy/master/lulseck.sh &> /dev/null
 chmod +x $HOME/lulseck.sh*
 local LINGUAGE=$(cat ${SCPidioma})
-$HOME/Dankelthaher.sh "${LINGUAGE}"
+$HOME/lulseck.sh "${LINGUAGE}"
 else
 msg -verm "$(fun_trans "Procedimiento Cancelado"): "
 msg -bar2

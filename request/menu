@@ -449,7 +449,7 @@ eth=$(ifconfig | grep -v inet6 | grep -v lo | grep -v 127.0.0.1 | grep "encap:Et
            echo -e " $(fun_trans "�Cual es la tasa RX?")"
            echo -ne "[ 1 - 999999999 ]: "; read rx
            [[ "$rx" = "" ]] && rx="999999999"
-           echo -e " $(fun_trans "�Cual es la tarifa TX")"
+           echo -e " $(fun_trans "¿Cual es la tarifa TX")"
            echo -ne "[ 1 - 999999999 ]: "; read tx
            [[ "$tx" = "" ]] && tx="999999999"
            apt-get install ethtool -y > /dev/null 2>&1
@@ -463,7 +463,7 @@ system=$(echo $(cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed '
 echo $system|awk '{print $1, $2}'
 }
 remove_script () {
-msg -ama "$(fun_trans "CONFIRMA ELIMINACIÓN TOTAL DE LOS SCRIPTS")?"
+msg -ama "$(fun_trans "CONFIRMA ELIMINACIÓN TOTAL DEL SCRIP")?"
 msg -bar
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p "[S/N]: " yesno
@@ -497,9 +497,9 @@ clock=$(lscpu | grep "CPU MHz" | awk '{print $3}')
 based=$(cat /etc/*release | grep ID_LIKE | awk -F "=" '{print $2}')
 processor=$(cat /proc/cpuinfo | grep "model name" | uniq | awk -F ":" '{print $2}')
 cpus=$(cat /proc/cpuinfo | grep processor | wc -l)
-[[ "$system" ]] && msg -ama "$(fun_trans "Sistema"): ${null}$system" || msg -ama "$(fun_trans "Sistema"): ${null}???"
+[[ "$system" ]] && msg -ama "$(fun_trans "Sistema"): ${null}$system" || msg -ama "$(fun_trans "Sistema Operativo"): ${null}???"
 [[ "$based" ]] && msg -ama "$(fun_trans "Basado"): ${null}$based" || msg -ama "$(fun_trans "Basado"): ${null}???"
-[[ "$processor" ]] && msg -ama "$(fun_trans "procesador"): ${null}$processor x$cpus" || msg -ama "$(fun_trans "procesador"): ${null}???"
+[[ "$processor" ]] && msg -ama "$(fun_trans "procesador"): ${null}$processor x$cpus" || msg -ama "$(fun_trans "Procesador"): ${null}???"
 [[ "$clock" ]] && msg -ama "$(fun_trans "Frecuencia de Operacion"): ${null}$clock MHz" || msg -ama "$(fun_trans "Frecuencia de Operacion"): ${null}???"
 msg -ama "$(fun_trans "Uso del procesador"): ${null}$(ps aux  | awk 'BEGIN { sum = 0 }  { sum += sprintf("%f",$3) }; END { printf " " "%.2f" "%%", sum}')"
 msg -ama "$(fun_trans "Memoria Virtual Total"): ${null}$(($totalram / 1024))"

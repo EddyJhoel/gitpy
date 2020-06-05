@@ -58,8 +58,7 @@ inst_components () {
 funcao_idioma () {
  echo -e " "
 msg -bar2
-cowsay -f eyes "BIENVENIDO A EDDYJHOEL-SCRIP 2.0 (FLIX)" | lolcat
-figlet ..dankelthaher.. | lolcat
+cowsay -f eyes "BIENVENIDO A EDDYJHOEL-SCRIP 2.0 FLIX"
  echo -e " "
 msg -bar2
 echo -e "\e[1;33mSelecione Un Idioma\e[0m"

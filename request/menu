@@ -702,7 +702,7 @@ mine_port
 echo ""
 echo -e "\e[1;31mBADVPN:\e[0m" "$badvpn"
 msg -bar
-msg -ne "$(fun_trans "SISTEMA OPERATIVO"): " && msg -bra "$(os_system)  "
+msg -blanco "$(fun_trans "SISTEMA OPERATIVO"): " && msg -bra "$(os_system)  "
 msg -ne "$(fun_trans "DIRECCION DE LA MAQUINA"): " && msg -bra "$(meu_ip)"
 [[ -e ${SCPdir}/USRonlines ]] && msg -ne "$(fun_trans "USUARIOS EN LINEA"): " && msg -bra "$(cat ${SCPdir}/USRonlines) $(fun_trans "Usuarios")"
 [[ -e ${SCPdir}/USRexpired ]] && msg -ne "$(fun_trans "USUARIOS EXPIRADOS"): " && msg -bra "$(cat ${SCPdir}/USRexpired) $(fun_trans "Usuarios")"

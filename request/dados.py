@@ -2,8 +2,7 @@
 Block="/etc/bin" && [[ ! -d ${Block} ]] && exit
 Block > /dev/null 2>&1
 clear
-cowsay -f eyes "esta herramienta ayuda aproteger tu vps de un ataque DDOS" | lolcat 
-figlet ..dankelthaher.. | lolcat
+cowsay -f eyes "Esta herramienta ayuda aproteger tu vps de un ataque DDOS"
 BARRA1="\e[0;31m➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\e[0m"
 echo -e "$BARRA1"
 
@@ -68,7 +67,7 @@ echo -e "\e[1;37mLa instalacion ha finalizado.\e[0m"
 echo -e "$BARRA1"
 echo -e "\e[1;37mEl archivo de configuracion esta en \e[1;33m/usr/local/ddos/ddos.conf\e[0m"
 echo -e "$BARRA1"
-echo -e "\e[1;37mGRACIAS POR UTILIZAR NEW-ADM \033[1;33m[\033[1;34m OFICIAL BY-DANKELTHAHER \033[1;33m]"
+echo -e "\e[1;37mGRACIAS POR UTILIZAR EDDYJHOEL-SCRIP \033[1;33m[\033[1;34m FLIX \033[1;33m]"
 echo -e "$BARRA1"
 
 echo

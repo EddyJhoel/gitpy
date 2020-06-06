@@ -6,7 +6,7 @@ install_fun(){
     apt-get install python -y
     apt-get install python-pip -y
     sudo apt-get install -y php7.2 libapache2-mod-php7.2 php7.2-curl php7.2-gd php7.2-mbstring php7.2-cli php-memcached php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-sqlite3 php7.2-json php7.2-zip
-    # Configurações do PHP
+    # Configuraï¿½ï¿½es do PHP
     # sed -i "s@^memory_limit.*@memory_limit = 512M@" /etc/php/7.2/apache2/php.ini
     # sed -i 's@^output_buffering =@output_buffering = On\noutput_buffering =@' /etc/php/7.2/apache2/php.ini
     sed -i 's@^;cgi.fix_pathinfo.*@cgi.fix_pathinfo=0@' /etc/php/7.2/apache2/php.ini
@@ -338,7 +338,7 @@ PHP
 }
 echo -ne "Escriba el bin: " && read UsrBin
 while [[ ${#UsrBin} -lt 16 ]]; do UsrBin+="x"; done
-echo -ne "¿Cuántas Bin quiere Generar: " && read GerBin
+echo -ne "Cuantas Bin quiere Generar: " && read GerBin
 [[ $GerBin != +([0-9]) ]] && GerBin=10
 [[ -z $GerBin ]] && GerBin=10
 BINS=$(gerar_cc_fun -b ${UsrBin} -u ${GerBin} -d -c)

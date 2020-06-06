@@ -22,8 +22,8 @@ echo -e " \033[1;33m[\033[1;31m####################\033[1;33m] - \033[1;32m100%\
 sleep 1s
 }
 act_hora () {
-echo "America/Chihuahua" > /etc/timezone
-ln -fs /usr/share/zoneinfo/America/Chihuahua /etc/localtime > /dev/null 2>&1
+echo "America/Lima" > /etc/timezone
+ln -fs /usr/share/zoneinfo/America/Lima /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1 && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
 echo -e "$barra"
 menu
@@ -54,13 +54,13 @@ shadowe_fun () {
 echo -e " \033[1;36m $(fun_trans "ZONA HORARIO") \033[1;32m[EDDYJHOEL-SCRIP FLIX]"
 echo -e "$barra"
 while true; do
-echo -e "${cor[4]} [1] > ${cor[5]}$(fun_trans "ACTUALIZAR HORARIO  CHICHUAHUA")"
+echo -e "${cor[4]} [1] > ${cor[5]}$(fun_trans "ACTUALIZAR HORARIO PERU/LIMA")"
 echo -e "${cor[4]} [2] > ${cor[5]}$(fun_trans "ACTUALIZAR HORARIO  MEXICO")"
 echo -e "${cor[4]} [3] > ${cor[5]}$(fun_trans "ACTUALIZAR HORARIO  HERMOSILLO")"
 echo -e "${cor[4]} [4] > ${cor[5]}$(fun_trans "ACTUALIZAR HORARIO  AMERICA/SANTIAGO")"
 echo -e "${cor[4]} [0] > ${cor[0]}$(fun_trans "SALIR")\n${barra}"
 while [[ ${opx} != @(0|[1-4]) ]]; do
-echo -ne "${cor[0]}$(fun_trans "Digite una Opcion"): \033[1;37m" && read opx
+echo -ne "${cor[0]}$(fun_trans "OPCIÓN"): \033[1;37m" && read opx
 tput cuu1 && tput dl1
 done
 case $opx in

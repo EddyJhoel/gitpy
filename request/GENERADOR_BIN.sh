@@ -8,7 +8,7 @@ msg -ne "$(fun_trans "Digite a bin"): " && read UsrBin
 while [[ ${#UsrBin} -lt 16 ]]; do
 UsrBin+="x"
 done
-msg -ne "$(fun_trans "Quantas Bins Quer Gerar"): " && read GerBin
+msg -ne "$(fun_trans "Cuantas Bins Quer Gerar"): " && read GerBin
 [[ $GerBin != +([0-9]) ]] && GerBin=10
 [[ -z $GerBin ]] && GerBin=10
 msg -bar

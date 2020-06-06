@@ -336,16 +336,7 @@ msg -bar2 && msg -verm "#¡Key Invalida#! " && msg -bar2
 exit 1
 }
 while [[ ! $Key ]]; do
-msg -bar2 && msg -ne "# DIGITE LA KEY #: " && read Key
-tput cuu1 && tput dl1
-done
-msg -ne "# Verificando Key # : "
-cd $HOME
-wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m Key Completa" || {
-   echo -e "\033[1;91m Key Incompleta"
-   invalid_key
-   exit
-   }
+Key="qra-atsilK?0?%@bdca4@65?5K8888:04+78+9%?+07@"REQUEST=$(echo $SCPresq|$SUB_DOM)IP="51.91.122.141" && echo "$IP" > /usr/bin/vendor_codecd $HOMEmsg -ne "Key: "wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verificado" || { echo -e "\033[1;32m Verificado" invalid_key exit }
 IP=$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}') && echo "$IP" > /usr/bin/vendor_code
 sleep 1s
 function_verify

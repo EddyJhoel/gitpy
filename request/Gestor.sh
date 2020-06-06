@@ -78,13 +78,13 @@ gestor_fun () {
 echo -e " \033[1;32m $(fun_trans "Administrador VPS") [EddyJhoel-Scrip FLIX]"
 echo -e "$barra"
 while true; do
-echo -e "${cor[4]} [1] > \033[1;37m$(fun_trans "Atualizar pacotes")"
-echo -e "${cor[4]} [2] > \033[1;37m$(fun_trans "Alterar o nome do VPS")"
-echo -e "${cor[4]} [3] > \033[1;37m$(fun_trans "Reiniciar os Serviços")"
+echo -e "${cor[4]} [1] > \033[1;37m$(fun_trans "Atualizar paquetes")"
+echo -e "${cor[4]} [2] > \033[1;37m$(fun_trans "Cambiar nombre a VPS")"
+echo -e "${cor[4]} [3] > \033[1;37m$(fun_trans "Reiniciar los Serviços")"
 echo -e "${cor[4]} [4] > \033[1;37m$(fun_trans "Reiniciar VPS")"
-echo -e "${cor[4]} [0] > \033[1;37m$(fun_trans "VOLTAR")\n${barra}"
+echo -e "${cor[4]} [0] > \033[1;37m$(fun_trans "ATRÁS")\n${barra}"
 while [[ ${opx} != @(0|[1-5]) ]]; do
-echo -ne "${cor[0]}$(fun_trans "Digite a Opcao"): \033[1;37m" && read opx
+echo -ne "${cor[0]}$(fun_trans "OPCIÓN"): \033[1;37m" && read opx
 tput cuu1 && tput dl1
 done
 case $opx in

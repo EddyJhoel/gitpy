@@ -827,7 +827,7 @@ echo '<h1><font color="blue">' >> $local
 fi
 echo "$ban_ner" >> $local
 echo '</font></h1>' >> $local
-echo '<h1><font>===============================</font></h1>' >> $local
+echo '<h1><font>=============================</font></h1>' >> $local
 txt_font () {
 msg -ne "$(fun_trans "escriba el mensaje secundario"): " && read ban_ner2
 echo -e " \033[1;32m[1] >\033[1;32m $(fun_trans "Verde")"

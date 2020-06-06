@@ -48,7 +48,7 @@ fun_bar 'apt-get autoremove -y' 'apt-get autoclean -y'
 echo ""
 # Eliminar archivos inútiles del cache, donde registra las cópias de actualizaciones que entan instaladas pero del gerenciador de paquetes
 
-echo -e "\033[1;32m        Removendo paquetes con problemas"
+echo -e "\033[1;32m        Removiendo paquetes con problemas"
 echo ""
 fun_bar 'apt-get -f remove -y' 'apt-get clean -y'
 #Remover paquetes con problemas

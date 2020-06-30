@@ -14,6 +14,7 @@ do
         if [ $NUM1 -eq 1 ]; then
                 echo "[PID] $PID - [Usuario]: $USER";
                 echo "[TOTAL en Dropbear]: $NUM1";
+                echo "Sumando $NUM1 + $USER;
         fi
 done
 echo "---";
